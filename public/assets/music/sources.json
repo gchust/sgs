@@ -1,0 +1,54 @@
+[
+  {
+    "id": "serene",
+    "displayName": "烟雨江南",
+    "mood": "优美",
+    "title": "Ripples",
+    "artist": "Kevin MacLeod",
+    "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100691",
+    "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Ripples.mp3",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "originalSha256": "a2a2c0df863955d4ae4801aae7cf51c716e255aadfd7e87419228c5c5182c87c",
+    "sha256": "7d8e34678df35f9bea2d49e3ed3b51bd1161427de151f3e9fa9ffd4eba639ccd"
+  },
+  {
+    "id": "sorrow",
+    "displayName": "月下思归",
+    "mood": "悲伤",
+    "title": "Ishikari Lore",
+    "artist": "Kevin MacLeod",
+    "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100192",
+    "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Ishikari%20Lore.mp3",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "originalSha256": "2ae7e32d371f839c507f44397473942a9fbaffcea4c1ac1f94331fdf70a2b581",
+    "sha256": "5c6654d26baeee4c485d70c1d7425fa378e181cc14d13e70cfe6971eb7c2d5b5"
+  },
+  {
+    "id": "heroic",
+    "displayName": "万里山河",
+    "mood": "激昂",
+    "title": "Mountain Emperor",
+    "artist": "Kevin MacLeod",
+    "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1700012",
+    "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Mountain%20Emperor.mp3",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "originalSha256": "5dd109bdeb8f206ec4ca276e47aa6b6b8ca96df4b5580e5e2f078f4a95a00f7b",
+    "sha256": "aa5fb887952ac9fe1b80eb50028207a04030df6686419438f80ef955a1a7d608"
+  },
+  {
+    "id": "joyful",
+    "displayName": "春日游园",
+    "mood": "快乐",
+    "title": "Shenyang",
+    "artist": "Kevin MacLeod",
+    "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1600066",
+    "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Shenyang.mp3",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "originalSha256": "1cf2e0f57f820d82e9066ba4dca076735aedd512bc1909fdaa2e0065bd866786",
+    "sha256": "cbb3cdaed167166d3b5d17902646b483c44e5f8323c3a5955fd991115fa22eed"
+  }
+]
