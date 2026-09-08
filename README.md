@@ -2,6 +2,17 @@
 
 React＋Vite 纯前端卡牌游戏。身份、单挑、国战三种单人人机模式，其他角色由本地 AI 控制。包含标风 33 位武将和 6 位拓展武将，共 39 位。规则、AI、计时、存档和音频全部在浏览器运行，无需服务端运行时、数据库或语音 API Key。
 
+## 在线游玩与一键部署
+
+- [在线游玩（原站）](https://mengjiang-sanguo.gong-ads.chatgpt.site)
+- [GitHub Pages](https://gchust.github.io/sgs/)：首次使用需要按下方说明启用 Pages，部署成功后可访问。
+- [查看 Pages 部署状态](https://github.com/gchust/sgs/actions/workflows/deploy-pages.yml)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fgchust%2Fsgs%2Ftree%2Fdevelop)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2Fgchust%2Fsgs)
+
+按钮会进入对应平台的部署向导；登录、授权复制仓库并确认项目名称后即可部署，无需配置游戏 API Key。Cloudflare 按钮使用 Workers Static Assets，仅托管静态文件，没有 Worker 业务代码。仓库默认分支为 `develop`。
+
 ## 对战模式
 
 | 模式 | 人数 | 胜利条件 |
@@ -38,7 +49,31 @@ node --test tests/*.test.mjs tests/game/*.test.mjs
 
 构建后将 `dist/` 目录的全部内容上传到任意静态站点托管服务即可。部署时不需要 Node.js、Worker、SSR、数据库、环境变量或服务端 API。请通过 HTTP(S) 访问，不能用 `file://` 双击打开 HTML。
 
-默认使用相对资源路径，支持域名根目录以及 `/sgs/` 等子目录。页面、立绘、语音与 BGM 均随构建输出；首次访问子目录时保留末尾 `/`，例如 `https://gchust.github.io/sgs/`。GitHub Pages 需要发布构建后的 `dist/`，不能直接把源码分支当成成品；如使用 GitHub Actions，构建命令为 `npm ci && npm run build`，上传目录为 `dist`。参考 [Vite 静态部署](https://vite.dev/guide/static-deploy.html)。
+默认使用相对资源路径，支持域名根目录以及 `/sgs/` 等子目录。页面、立绘、语音与 BGM 均随构建输出；首次访问子目录时保留末尾 `/`。参考 [Vite 静态部署](https://vite.dev/guide/static-deploy.html)。
+
+### GitHub Pages 自动部署
+
+仓库内已提供 [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml)：每次推送到 `develop` 时，安装依赖、构建、运行测试，再发布 `dist/`。也支持手动触发。使用 GitHub 自动提供的 `GITHUB_TOKEN`，无需添加个人 Token 或仓库 Secret。
+
+首次启用：
+
+1. 打开 [Settings → Pages](https://github.com/gchust/sgs/settings/pages)，将 **Build and deployment → Source** 设为 **GitHub Actions**。
+2. 打开 [Deploy GitHub Pages](https://github.com/gchust/sgs/actions/workflows/deploy-pages.yml)，点击 **Run workflow**，选择 `develop`；以后推送会自动更新。
+3. 等待部署成功，访问 **https://gchust.github.io/sgs/**。实际地址也会显示在工作流的 `github-pages` 环境中。
+
+Fork 后先在自己的仓库启用 Actions 和 Pages，再运行工作流；地址变为 `https://<用户名>.github.io/<仓库名>/`。请勿选择直接发布源码分支，浏览器需要构建后的文件。
+
+### Vercel
+
+点击上方按钮，或在 Vercel 导入本仓库并选择 `develop` 作为生产分支。[vercel.json](vercel.json) 已配置 Vite、`npm ci`、`npm run build` 和输出目录 `dist`。部署完成后，平台提供实际的 `*.vercel.app` 地址；后续关联分支提交自动更新。
+
+### Cloudflare
+
+点击上方按钮，确认构建命令为 `npm run build`、部署命令为 `npx wrangler deploy`，Node.js 使用 22.13 或更高版本。[wrangler.jsonc](wrangler.jsonc) 指定 `dist` 为静态资源目录，不包含服务端入口或数据库绑定。部署完成后在控制台查看实际的 `*.workers.dev` 地址。
+
+也可以使用 **Cloudflare Pages**：在 Workers & Pages 中创建 Pages 项目并连接本仓库，生产分支选择 `develop`，框架选择 Vite，构建命令填写 `npm run build`，输出目录填写 `dist`，根目录保持仓库根目录。部署后使用平台分配的 `*.pages.dev` 地址。Pages Git 集成不需要使用 Wrangler 部署命令。
+
+官方说明：[Vercel 部署按钮](https://vercel.com/docs/deploy-button)、[Cloudflare 部署按钮](https://developers.cloudflare.com/workers/platform/deploy-buttons/)。这两个平台的个人部署地址需在各自部署成功后获取，本仓库不预设不存在的地址。
 
 原 Sites 地址通过 `.openai/hosting.json` 的 `static.directory: "dist"` 发布相同静态产物，该配置只用于托管，不参与游戏运行。在其他平台部署无需此配置。
 
