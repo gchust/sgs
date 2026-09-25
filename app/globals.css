@@ -381,10 +381,15 @@
 }
 
 .hero-voice-preview { margin-top: 10px; }
-.hero-voice-preview>small { display: block; color: #bacbb8; font-size: 11px; line-height: 1.5; }
+.hero-voice-preview>small { display: block; color: #637258; font-size: 11px; line-height: 1.5; }
 .hero-voice-preview>div { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
 .hero-voice-preview .button-quiet { min-height: 30px; padding: 5px 9px; font-size: 12px; }
 .music-progress { margin: 0 0 16px; }
 .music-progress progress { display: block; width: 100%; height: 4px; accent-color: #d8be82; border: 0; border-radius: 4px; overflow: hidden; }
 .music-progress>span { display: flex; justify-content: space-between; margin-top: 5px; color: #a8baad; font-size: 11px; font-variant-numeric: tabular-nums; }
 .card-history-context small { display: block; color: #b8c6b4; font-size: 11px; margin-top: 4px; }
+
+.hero-gallery { grid-auto-rows: max-content; align-content: start; }
+.voice-credits { margin: 10px 0 0; font-size: 10px; line-height: 1.7; color: #637258; overflow-wrap: anywhere; }
+.voice-credits a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.voice-credits a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }

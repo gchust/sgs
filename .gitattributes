@@ -1,0 +1,5 @@
+# Keep vendored QSanguosha files byte-identical, including original whitespace.
+public/assets/voice/qsanguosha/**/*.ogg -text
+public/assets/voice/qsanguosha/transcripts/** -text -whitespace
+public/assets/voice/qsanguosha/UPSTREAM-README.md -text -whitespace
+public/assets/voice/qsanguosha/LICENSE.txt -text -whitespace

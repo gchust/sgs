@@ -1,366 +1,282 @@
 {
   "杀": {
-    "file": "sha",
-    "text": "杀！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/slash.ogg",
+      "text": "杀",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/slash.ogg"
+      },
+      "sha256": "6ee1f2a4e5e5bf71cc3d2ca984b8831b582757e57e4b0b20670e3ae526aacf65"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/slash.ogg",
+      "text": "杀",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/slash.ogg"
+      },
+      "sha256": "2265e2dcd5f8256477ef222ebecda09e58e38069dd31369e4bdde434f6970b04"
+    }
   },
   "闪": {
-    "file": "shan",
-    "text": "闪！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/jink.ogg",
+      "text": "闪",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/jink.ogg"
+      },
+      "sha256": "a433c53f86f11270b29d68159ead4c18c84a6d607f009db6ad4ef7c613f618e3"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/jink.ogg",
+      "text": "闪",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/jink.ogg"
+      },
+      "sha256": "b44545c363653491bfa5c6a910f38ac8b9e93a39c16eed353532fe2e3e46851a"
+    }
   },
   "桃": {
-    "file": "tao",
-    "text": "桃！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/peach.ogg",
+      "text": "桃",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/peach.ogg"
+      },
+      "sha256": "f4d72ffb9f4aff18cc604ce3dff2a10c90a996778804cc607b82c4450a148736"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/peach.ogg",
+      "text": "桃",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/peach.ogg"
+      },
+      "sha256": "f4d72ffb9f4aff18cc604ce3dff2a10c90a996778804cc607b82c4450a148736"
+    }
   },
   "无中生有": {
-    "file": "wuzhong",
-    "text": "无中生有！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/ex_nihilo.ogg",
+      "text": "无中生有",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/ex_nihilo.ogg"
+      },
+      "sha256": "6a6c2d434bb233c585891b62e91255e17b7f296fa3bbb3a7224ab2ea5a5607e4"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/ex_nihilo.ogg",
+      "text": "无中生有",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/ex_nihilo.ogg"
+      },
+      "sha256": "20c50bdd3ccc12659e2b07796fc470a6e45b5e2c8a23de0e5bcd5cede6f3122e"
+    }
   },
   "过河拆桥": {
-    "file": "guohe",
-    "text": "过河拆桥！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/dismantlement.ogg",
+      "text": "过河拆桥",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/dismantlement.ogg"
+      },
+      "sha256": "fc26a32b130ac8e3478bb239d3114f289ba79cadb0a6034247ff9b3e0227621c"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/dismantlement.ogg",
+      "text": "过河拆桥",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/dismantlement.ogg"
+      },
+      "sha256": "5bb310d5b6c5ae7291ec390837202350d600903f9d59fb117de421a735cf4a82"
+    }
   },
   "顺手牵羊": {
-    "file": "shunshou",
-    "text": "顺手牵羊！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/snatch.ogg",
+      "text": "顺手牵羊",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/snatch.ogg"
+      },
+      "sha256": "86c6bcf0c655556d19d78fa5ae014fedc365487b10570ffa09636ae43888d4cf"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/snatch.ogg",
+      "text": "顺手牵羊",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/snatch.ogg"
+      },
+      "sha256": "2c5227226f0e3df46f95a5e5c9aed7fe1d8129068ee9d894cf1dbdd4c77a8046"
+    }
   },
   "决斗": {
-    "file": "juedou",
-    "text": "决斗！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/duel.ogg",
+      "text": "决斗",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/duel.ogg"
+      },
+      "sha256": "5d2435a39429b2d014f031468330e37366dafcab58ceb544d7893e90ecf55018"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/duel.ogg",
+      "text": "决斗",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/duel.ogg"
+      },
+      "sha256": "e32093a97d92009e1581f39ef11c906e3b29520056feb3e1bad6b700e4ef5839"
+    }
   },
   "南蛮入侵": {
-    "file": "nanman",
-    "text": "南蛮入侵！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/savage_assault.ogg",
+      "text": "南蛮入侵",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/savage_assault.ogg"
+      },
+      "sha256": "e8a90716dbe5c8913482a6993de7ac6fc716f0b442b047facff1be4574531477"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/savage_assault.ogg",
+      "text": "南蛮入侵",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/savage_assault.ogg"
+      },
+      "sha256": "3cce15e541695b65a35e18f40ac80253992b316f933e2beb2b3986935a448503"
+    }
   },
   "万箭齐发": {
-    "file": "wanjian",
-    "text": "万箭齐发！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/archery_attack.ogg",
+      "text": "万箭齐发",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/archery_attack.ogg"
+      },
+      "sha256": "239d4bc19d131dcac6b1df23fda99c2ae4717d299bf204e23a610fbf14f699f7"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/archery_attack.ogg",
+      "text": "万箭齐发",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/archery_attack.ogg"
+      },
+      "sha256": "bf07dc6b03bf7a9a905682cf97c43c50936f3590b1f99554ffd5f11345b996f5"
+    }
   },
   "桃园结义": {
-    "file": "taoyuan",
-    "text": "桃园结义！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/god_salvation.ogg",
+      "text": "桃园结义",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/god_salvation.ogg"
+      },
+      "sha256": "762ee5c0eee5c191777af71430364bd33e4dfd056093d931d28cb70b9e4de77e"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/god_salvation.ogg",
+      "text": "桃园结义",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/god_salvation.ogg"
+      },
+      "sha256": "7b97f7f2aab13f229bd28fed5aeb5d54492df23f49296001cb0830250d35a5a6"
+    }
   },
   "五谷丰登": {
-    "file": "wugu",
-    "text": "五谷丰登！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/amazing_grace.ogg",
+      "text": "五谷丰登",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/amazing_grace.ogg"
+      },
+      "sha256": "7d0c9972fd8efae0e43c37a6f76792b5bb4ac33ff5123f3744e65e7028ec3316"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/amazing_grace.ogg",
+      "text": "五谷丰登",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/amazing_grace.ogg"
+      },
+      "sha256": "3f8a4f868c03c29977a3c6899a632578d12e49a441a248e6feeafe4b4d6ab65f"
+    }
   },
   "无懈可击": {
-    "file": "wuxie",
-    "text": "无懈可击！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/nullification.ogg",
+      "text": "无懈可击",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/nullification.ogg"
+      },
+      "sha256": "17f7393e9efea9122458d1d9823a5b8bdf039079e802989457bf5d70ad2a98db"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/nullification.ogg",
+      "text": "无懈可击",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/nullification.ogg"
+      },
+      "sha256": "bb104e5b9f258ec16320851338f6d07bba5f59ca1abed01247e9be5040645ed6"
+    }
   },
   "乐不思蜀": {
-    "file": "lebu",
-    "text": "乐不思蜀！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/indulgence.ogg",
+      "text": "乐不思蜀",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/indulgence.ogg"
+      },
+      "sha256": "df2e8b2d675798bc612329e5a6d87b77ff29010e0e9f21a2274dcdd6fd9c45b1"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/indulgence.ogg",
+      "text": "乐不思蜀",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/indulgence.ogg"
+      },
+      "sha256": "df017f450f903b7b7ada320fe085815376e2bd19b88618d6f51bca3112a2afd8"
+    }
   },
   "闪电": {
-    "file": "shandian",
-    "text": "闪电！"
-  },
-  "诸葛连弩": {
-    "file": "zhuge",
-    "text": "诸葛连弩！"
-  },
-  "青釭剑": {
-    "file": "qinggang",
-    "text": "青釭剑！"
-  },
-  "雌雄双股剑": {
-    "file": "cixiong",
-    "text": "雌雄双股剑！"
-  },
-  "青龙偃月刀": {
-    "file": "qinglong",
-    "text": "青龙偃月刀！"
-  },
-  "丈八蛇矛": {
-    "file": "zhangba",
-    "text": "丈八蛇矛！"
-  },
-  "贯石斧": {
-    "file": "guanshi",
-    "text": "贯石斧！"
-  },
-  "方天画戟": {
-    "file": "fangtian",
-    "text": "方天画戟！"
-  },
-  "麒麟弓": {
-    "file": "qilin",
-    "text": "麒麟弓！"
-  },
-  "八卦阵": {
-    "file": "bagua",
-    "text": "八卦阵！"
-  },
-  "仁王盾": {
-    "file": "renwang",
-    "text": "仁王盾！"
-  },
-  "寒冰剑": {
-    "file": "hanbing",
-    "text": "寒冰剑！"
-  },
-  "赤兔": {
-    "file": "chitu",
-    "text": "赤兔！"
-  },
-  "的卢": {
-    "file": "dilu",
-    "text": "的卢！"
-  },
-  "绝影": {
-    "file": "jueying",
-    "text": "绝影！"
-  },
-  "爪黄飞电": {
-    "file": "zhuahuang",
-    "text": "爪黄飞电！"
-  },
-  "大宛": {
-    "file": "dayuan",
-    "text": "大宛！"
-  },
-  "紫骍": {
-    "file": "zixing",
-    "text": "紫骍！"
-  },
-  "开局": {
-    "file": "start",
-    "text": "桃园演武，开战！"
-  },
-  "大获全胜！": {
-    "file": "win",
-    "text": "大获全胜！"
-  },
-  "胜败乃兵家常事。": {
-    "file": "lose",
-    "text": "胜败乃兵家常事，来日再战。"
-  },
-  "轮到你了": {
-    "file": "your-turn",
-    "text": "轮到你了。"
-  },
-  "即将超时": {
-    "file": "hurry",
-    "text": "请尽快出牌。"
-  },
-  "强袭": {
-    "file": "dianwei-0",
-    "text": "强袭！"
-  },
-  "马术": {
-    "file": "pangde-0",
-    "text": "马术！"
-  },
-  "猛进": {
-    "file": "pangde-1",
-    "text": "猛进！"
-  },
-  "天义": {
-    "file": "taishici-0",
-    "text": "天义！"
-  },
-  "乱击": {
-    "file": "yuanshao-0",
-    "text": "乱击！"
-  },
-  "祸首": {
-    "file": "menghuo-0",
-    "text": "祸首！"
-  },
-  "再起": {
-    "file": "menghuo-1",
-    "text": "再起！"
-  },
-  "巨象": {
-    "file": "zhurong-0",
-    "text": "巨象！"
-  },
-  "烈刃": {
-    "file": "zhurong-1",
-    "text": "烈刃！"
-  },
-  "武圣": {
-    "file": "guanyu-0",
-    "text": "武圣！"
-  },
-  "仁德": {
-    "file": "liubei-0",
-    "text": "仁德！"
-  },
-  "咆哮": {
-    "file": "zhangfei-0",
-    "text": "咆哮！"
-  },
-  "龙胆": {
-    "file": "zhaoyun-0",
-    "text": "龙胆！"
-  },
-  "铁骑": {
-    "file": "machao-1",
-    "text": "铁骑！"
-  },
-  "观星": {
-    "file": "zhugeliang-0",
-    "text": "观星！"
-  },
-  "空城": {
-    "file": "zhugeliang-1",
-    "text": "空城！"
-  },
-  "集智": {
-    "file": "huangyueying-0",
-    "text": "集智！"
-  },
-  "奇才": {
-    "file": "huangyueying-1",
-    "text": "奇才！"
-  },
-  "奸雄": {
-    "file": "caocao-0",
-    "text": "奸雄！"
-  },
-  "反馈": {
-    "file": "simayi-0",
-    "text": "反馈！"
-  },
-  "鬼才": {
-    "file": "simayi-1",
-    "text": "鬼才！"
-  },
-  "刚烈": {
-    "file": "xiahoudun-0",
-    "text": "刚烈！"
-  },
-  "突袭": {
-    "file": "zhangliao-0",
-    "text": "突袭！"
-  },
-  "裸衣": {
-    "file": "xuchu-0",
-    "text": "裸衣！"
-  },
-  "天妒": {
-    "file": "guojia-0",
-    "text": "天妒！"
-  },
-  "遗计": {
-    "file": "guojia-1",
-    "text": "遗计！"
-  },
-  "倾国": {
-    "file": "zhenji-0",
-    "text": "倾国！"
-  },
-  "洛神": {
-    "file": "zhenji-1",
-    "text": "洛神！"
-  },
-  "制衡": {
-    "file": "sunquan-0",
-    "text": "制衡！"
-  },
-  "奇袭": {
-    "file": "ganning-0",
-    "text": "奇袭！"
-  },
-  "克己": {
-    "file": "lvmeng-0",
-    "text": "克己！"
-  },
-  "苦肉": {
-    "file": "huanggai-0",
-    "text": "苦肉！"
-  },
-  "英姿": {
-    "file": "zhouyu-0",
-    "text": "英姿！"
-  },
-  "反间": {
-    "file": "zhouyu-1",
-    "text": "反间！"
-  },
-  "国色": {
-    "file": "daqiao-0",
-    "text": "国色！"
-  },
-  "流离": {
-    "file": "daqiao-1",
-    "text": "流离！"
-  },
-  "谦逊": {
-    "file": "luxun-0",
-    "text": "谦逊！"
-  },
-  "连营": {
-    "file": "luxun-1",
-    "text": "连营！"
-  },
-  "结姻": {
-    "file": "sunshangxiang-0",
-    "text": "结姻！"
-  },
-  "枭姬": {
-    "file": "sunshangxiang-1",
-    "text": "枭姬！"
-  },
-  "急救": {
-    "file": "huatuo-0",
-    "text": "急救！"
-  },
-  "青囊": {
-    "file": "huatuo-1",
-    "text": "青囊！"
-  },
-  "无双": {
-    "file": "lvbu-0",
-    "text": "无双！"
-  },
-  "离间": {
-    "file": "diaochan-0",
-    "text": "离间！"
-  },
-  "闭月": {
-    "file": "diaochan-1",
-    "text": "闭月！"
-  },
-  "神速": {
-    "file": "xiahouyuan-0",
-    "text": "神速！"
-  },
-  "据守": {
-    "file": "caoren-0",
-    "text": "据守！"
-  },
-  "烈弓": {
-    "file": "huangzhong-0",
-    "text": "烈弓！"
-  },
-  "狂骨": {
-    "file": "weiyan-0",
-    "text": "狂骨！"
-  },
-  "红颜": {
-    "file": "xiaoqiao-0",
-    "text": "红颜！"
-  },
-  "天香": {
-    "file": "xiaoqiao-1",
-    "text": "天香！"
-  },
-  "不屈": {
-    "file": "zhoutai-0",
-    "text": "不屈！"
-  },
-  "雷击": {
-    "file": "zhangjiao-0",
-    "text": "雷击！"
-  },
-  "鬼道": {
-    "file": "zhangjiao-1",
-    "text": "鬼道！"
-  },
-  "蛊惑": {
-    "file": "yuji-0",
-    "text": "蛊惑！"
+    "male": {
+      "file": "qsanguosha/85baa7489157/card/male/lightning.ogg",
+      "text": "闪电",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/male/lightning.ogg"
+      },
+      "sha256": "a74cac1bc3c868a7dea12d536dfdde12e52fa20f5674183b9745f59d3649761b"
+    },
+    "female": {
+      "file": "qsanguosha/85baa7489157/card/female/lightning.ogg",
+      "text": "闪电",
+      "source": {
+        "revision": "85baa7489157c023bb2528a40ce4ef4e12863387",
+        "path": "audio/card/female/lightning.ogg"
+      },
+      "sha256": "e95298029ebc0d7700948c550d9e16fec709eaf995cc1cf7ee67aed02ab12d5f"
+    }
   }
 }

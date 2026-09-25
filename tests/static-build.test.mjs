@@ -57,7 +57,7 @@ test('Vite compiles runtime portrait and audio paths for relocatable static host
   const output = Array.isArray(result) ? result[0].output : result.output;
   const chunk = output.find(item => item.type === 'chunk');
   const { assetUrl } = await import(`data:text/javascript;base64,${Buffer.from(chunk.code).toString('base64')}`);
-  for (const prefix of ['/', '/sgs/']) for (const file of ['assets/portraits.png', 'assets/voice/sha.mp3', 'assets/music/serene.mp3']) {
+  for (const prefix of ['/', '/sgs/']) for (const file of ['assets/portraits.png', 'assets/voice/qsanguosha/85baa7489157/card/male/slash.ogg', 'assets/music/serene.mp3']) {
     assert.equal(new URL(assetUrl(file), `https://example.test${prefix}`).pathname, prefix + file);
   }
 });
