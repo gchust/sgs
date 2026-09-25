@@ -52,22 +52,24 @@ export function BattleLog({ entries, onClose, onPause }) {
     </aside>;
 }
 
-export function ActionStage({ cards, entries, Card, onInspect }) {
+export function ActionStage({ cards = [], entries = [], Card, onInspect }) {
     const latest = cards.at(-1);
-    if (!latest) return <div className="action-stage empty-stage"><Swords size={28}/><span>等待第一张出牌</span><small>出牌者、目标和结果将在这里显示</small></div>;
+    if (!latest) return <div className="action-stage empty-stage"><Swords size={24}/><span>等待第一张出牌</span><small>这里保留最近 8 张牌，点击可查看详情</small></div>;
+    const recent = cards.slice(-8);
     const def = DEFS[latest.type];
     const Icon = latest.kind === 'response' ? Shield : def[1] === '锦囊' ? Sparkles : latest.type === 'tao' ? Heart : Swords;
     const start = entries.findIndex(e => e.kind === latest.kind && e.card?.type === latest.type && e.actor === latest.actor);
     const results = (start < 0 ? [] : entries.slice(0, start)).filter(e => ['damage', 'heal', 'equip', 'response', 'skill', 'death'].includes(e.kind)).slice(0, 2).reverse();
-    return <div className={`action-stage ink-${def[4]}`}>
-        <div className="featured-play" key={latest.seq}>
-            <Card card={latest} mini onClick={() => onInspect(latest)}/>
-            <div className="play-explanation"><span className="action-category"><Icon size={15}/>{latest.kind === 'response' ? '打出响应' : def[1] === '武器' || def[1] === '防具' || def[1] === '坐骑' ? '装备登场' : `${def[1]} · 当前出牌`}</span>
-                <div className="action-route"><b>{latest.by}</b><ArrowRight size={18}/><b>{latest.destination || '自身'}</b></div>
-                <h2>{def[0]}</h2><p>{latest.context || def[2]}</p>
-            </div>
-        </div>
-        <div className="action-outcomes" aria-live="polite">{results.length ? results.map(e => <span key={e.id} className={`outcome-${e.kind}`}><Target size={12}/>{e.text}</span>) : <span><Layers size={12}/>正在结算 · 按右上角暂停可停住阅读</span>}</div>
-        {cards.length > 1 && <div className="recent-plays"><small>前序出牌</small>{cards.slice(-4, -1).map(c => <button key={c.seq} onClick={() => onInspect(c)}>{c.by}<b>{DEFS[c.type][0]}</b><span>{c.destination || '自身'}</span></button>)}</div>}
-    </div>;
+    return <section className={`action-stage ink-${def[4]}`} aria-label="最近出牌">
+        <header className="trail-heading"><span>最近出牌 <small>{recent.length} / 8</small></span><small>较早 → 最新 · 点击查看</small></header>
+        <ol className="recent-card-trail" aria-label="最近8张出牌，按时间顺序排列" style={{ '--trail-count': recent.length }}>
+            {recent.map((card, index) => <li key={card.seq} className={index === recent.length - 1 ? 'latest-trail-card' : ''}>
+                <span className="trail-sequence">{index === recent.length - 1 ? '刚刚' : `#${card.seq}`}</span>
+                <Card card={card} mini onClick={() => onInspect(card)}/>
+                <span className="trail-player" title={`${card.by} → ${card.destination || '自身'}`}>{card.by}</span>
+            </li>)}
+        </ol>
+        <div className="latest-play-detail"><Icon size={14}/><b>{latest.by}</b><span>{latest.kind === 'response' ? '打出' : '使用'}</span><strong>{def[0]}</strong><ArrowRight size={13}/><span>{latest.destination || '自身'}</span></div>
+        <div className="action-outcomes" aria-live="polite">{results.length ? results.map(e => <span key={e.id} className={`outcome-${e.kind}`}><Target size={12}/>{e.text}</span>) : <span><Layers size={12}/>{latest.context || '点击卡牌，查看出牌详情'}</span>}</div>
+    </section>;
 }

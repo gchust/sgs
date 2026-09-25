@@ -6,26 +6,49 @@ import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 
 const flush = async () => { await Promise.resolve(); await Promise.resolve(); };
-function rig() {
-    const audios = [], tasks = new Map(); let sequence = 0;
+function rig({ nativeTimers = false } = {}) {
+    const audios = [], notifications = [], tasks = new Map(); let sequence = 0;
     const context = {
         currentTime: 0, destination: {},
         createMediaElementSource: () => ({ connect(node) { return node; }, disconnect() { this.disconnected = true; } }),
         createGain: () => ({ connect() {}, disconnect() { this.disconnected = true; }, gain: { value: 0, cancelScheduledValues() {}, setValueAtTime(value) { this.value = value; }, linearRampToValueAtTime(value) { this.value = value; } } }),
     };
     const player = new MusicPlayer({
+        notify: details => notifications.push(details),
         createAudio() {
             const audio = { paused: true, currentTime: 0, failure: null, pending: false,
                 play() { this.paused = false; if (this.failure) { this.paused = true; return Promise.reject(this.failure); } if (this.pending) return new Promise(resolve => { this.finish = resolve; }); return Promise.resolve(); },
                 pause() { this.paused = true; }, removeAttribute() { this.src = ''; }, load() {},
             }; audios.push(audio); return audio;
         },
-        schedule(fn, ms) { const id = ++sequence; tasks.set(id, { fn, ms }); return id; },
-        cancel(id) { tasks.delete(id); },
+        ...(!nativeTimers && {
+            schedule(fn, ms) { const id = ++sequence; tasks.set(id, { fn, ms }); return id; },
+            cancel(id) { tasks.delete(id); },
+        }),
     });
     const fire = ms => { for (const [id, task] of [...tasks]) if (task.ms === ms) { tasks.delete(id); task.fn(); } };
-    return { player, context, audios, tasks, fire };
+    return { player, context, audios, notifications, tasks, fire };
 }
+
+test('default timers preserve the browser receiver through playback, switching and cleanup', async t => {
+    const pending = new Map(); let next = 0;
+    t.mock.method(globalThis, 'setTimeout', function (callback) {
+        assert.equal(this, globalThis, 'setTimeout must be called on the browser global');
+        const id = ++next; pending.set(id, callback); return id;
+    });
+    t.mock.method(globalThis, 'clearTimeout', function (id) {
+        assert.equal(this, globalThis, 'clearTimeout must be called on the browser global');
+        pending.delete(id);
+    });
+    const { player, context } = rig({ nativeTimers: true });
+    player.start(context, { bgm: true }); await flush();
+    assert.equal(player.status, 'playing');
+    player.configure({ ...player.config, bgmTrack: 'heroic' }); await flush();
+    assert.equal(player.status, 'playing');
+    assert.equal(player.channel.id, 'heroic');
+    player.stop();
+    assert.equal(pending.size, 0);
+});
 
 test('music waits for a user start, streams a local looping track, and resumes at its position', async () => {
     const { player, context, audios } = rig();
@@ -36,6 +59,22 @@ test('music waits for a user start, streams a local looping track, and resumes a
     player.configure({ ...player.config, bgm: false }); assert(audios[0].paused);
     player.configure({ ...player.config, bgm: true }); await flush();
     assert.equal(audios.length, 1); assert.equal(audios[0].currentTime, 47); assert.equal(player.status, 'playing');
+});
+
+test('displayed playback progress follows the active media element and ignores retired tracks', async () => {
+    const { player, context, audios, notifications } = rig();
+    player.start(context, { bgm: true }); await flush();
+    audios[0].currentTime = 12.4; audios[0].duration = 205;
+    const oldUpdate = audios[0].ontimeupdate; oldUpdate();
+    assert.equal(notifications.at(-1).elapsed, 12.4);
+    assert.equal(notifications.at(-1).duration, 205);
+    player.configure({ ...player.config, bgmTrack: 'heroic' }); await flush();
+    const count = notifications.length; oldUpdate();
+    assert.equal(notifications.length, count);
+    assert.equal(notifications.at(-1).track, 'heroic');
+    player.stop();
+    assert.equal(audios[0].ontimeupdate, null);
+    assert.equal(audios[1].ontimeupdate, null);
 });
 
 test('voice ducking respects independent music volume and background never overrides music-off', async () => {

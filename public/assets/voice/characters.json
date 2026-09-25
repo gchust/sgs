@@ -1,0 +1,1030 @@
+{
+  "version": 2,
+  "provider": "Microsoft neural speech via edge-tts",
+  "description": "原创角色技能台词；六种中文神经声线，逐角色配置语速与音高，每技能两句轮换。非官方录音或真人模仿。",
+  "characters": {
+    "guanyu": {
+      "name": "关羽",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "-4%",
+      "pitch": "-6Hz",
+      "direction": "沉稳威严，坚定有力",
+      "skills": {
+        "武圣": [
+          {
+            "file": "characters/guanyu-0-0-dd71446583",
+            "text": "忠义在心，此刀不退！",
+            "sha256": "982db0444581364ed6e6b00f90c64a989b37b1d86144638fcabccaf474ae5e49"
+          },
+          {
+            "file": "characters/guanyu-0-1-80701a89a1",
+            "text": "青龙出鞘，谁敢当先！",
+            "sha256": "c6b02983752df518f52a4cfac5a44ac7ad73e43a545531d54bc89e8d930512d4"
+          }
+        ]
+      }
+    },
+    "liubei": {
+      "name": "刘备",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "-3%",
+      "pitch": "-3Hz",
+      "direction": "温厚真诚，宽和而坚定",
+      "skills": {
+        "仁德": [
+          {
+            "file": "characters/liubei-0-0-301e6906a2",
+            "text": "此物赠君，与我并肩。",
+            "sha256": "6878d751b0cb00049372c80e4193df9363dfae45e989c6729ddf0c162c49b780"
+          },
+          {
+            "file": "characters/liubei-0-1-c1939affd9",
+            "text": "以诚相待，同渡此关。",
+            "sha256": "491acd10991b80bb6cf8486b63d04a3e4090214793777a8b8f40a98f34c1ecc1"
+          }
+        ]
+      }
+    },
+    "zhangfei": {
+      "name": "张飞",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "+9%",
+      "pitch": "+5Hz",
+      "direction": "豪迈急切，短句爆发",
+      "skills": {
+        "咆哮": [
+          {
+            "file": "characters/zhangfei-0-0-da0ea4d881",
+            "text": "来呀！再接我一矛！",
+            "sha256": "50f7ffae1ecfff29052a1cf1b03f04737835f40a8fc75e40b4201cb00ec5e8a9"
+          },
+          {
+            "file": "characters/zhangfei-0-1-c8c454a4ab",
+            "text": "战个痛快，休想退后！",
+            "sha256": "f0bd230e9b19be1f42adb1687c427aab242af03b9909693b2899d2fd39f8b091"
+          }
+        ]
+      }
+    },
+    "zhaoyun": {
+      "name": "赵云",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "+5%",
+      "pitch": "+3Hz",
+      "direction": "清朗果断，少年英气",
+      "skills": {
+        "龙胆": [
+          {
+            "file": "characters/zhaoyun-0-0-c49eb8a261",
+            "text": "枪随心动，进退自如！",
+            "sha256": "16712bc0b8f4467756854b4337bb6c40f4858178eadb9a0674d1d0b86dc6eb91"
+          },
+          {
+            "file": "characters/zhaoyun-0-1-7e1847d655",
+            "text": "长枪在手，何惧重围！",
+            "sha256": "3b96f7a6d8026cac767d0c371a0a69eecfccc9f7f0e9c17607ba7b27e810dc08"
+          }
+        ]
+      }
+    },
+    "machao": {
+      "name": "马超",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "+7%",
+      "pitch": "+2Hz",
+      "direction": "锐气昂扬，骑兵冲锋",
+      "skills": {
+        "马术": [
+          {
+            "file": "characters/machao-0-0-c6b18be21f",
+            "text": "策马疾行，尘烟莫及！",
+            "sha256": "f2648ddbccc74059f8a41411606ef149df9b1bdba72d2f6145baa0d1f3b122d6"
+          },
+          {
+            "file": "characters/machao-0-1-e2ecb018ef",
+            "text": "骏骑如风，直取前阵！",
+            "sha256": "7c02e5b726f0bf2c1214f3b52b03ca3ea23ba539b1e7aef40fa4325b56d5cb70"
+          }
+        ],
+        "铁骑": [
+          {
+            "file": "characters/machao-1-0-f98bf0ca59",
+            "text": "铁骑突阵，莫要退缩！",
+            "sha256": "b4e62cf2357799c1552d301bc6855cf68be95d2fead1ebc5828cf6e33584ad1e"
+          },
+          {
+            "file": "characters/machao-1-1-d02baa7f78",
+            "text": "踏破敌阵，就在此刻！",
+            "sha256": "6a482f1e0638b75c010177570a3abd810396bf16c96ca009eb5cf2d126d69ce5"
+          }
+        ]
+      }
+    },
+    "zhugeliang": {
+      "name": "诸葛亮",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-5%",
+      "pitch": "-4Hz",
+      "direction": "从容含笑，胸有成竹",
+      "skills": {
+        "观星": [
+          {
+            "file": "characters/zhugeliang-0-0-1f49867424",
+            "text": "且看星移，胜机已明。",
+            "sha256": "786f41afd952669843fd9c7c0576c424c812d31cab08c43b6116893a833d6e5b"
+          },
+          {
+            "file": "characters/zhugeliang-0-1-035f560059",
+            "text": "观此天象，自有妙计。",
+            "sha256": "42a6f541041c7c495a821c7327af561375a69f73e2a01c8eaa017d8525a9b9b5"
+          }
+        ],
+        "空城": [
+          {
+            "file": "characters/zhugeliang-1-0-2dc3dd5ebe",
+            "text": "琴声未歇，何必相疑？",
+            "sha256": "4f45990c62a4fa6d9ca61259050d96277d9dd8585b161cf80e5b662933937d3d"
+          },
+          {
+            "file": "characters/zhugeliang-1-1-ff17b2ae1c",
+            "text": "城门已开，阁下请便。",
+            "sha256": "dc98fa202054620e68ce89a4f00eb9e8c0dcdc0ef6f2aac46e081e357e6b5fb7"
+          }
+        ]
+      }
+    },
+    "huangyueying": {
+      "name": "黄月英",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+4%",
+      "pitch": "+4Hz",
+      "direction": "聪慧灵动，发现妙计的欣喜",
+      "skills": {
+        "集智": [
+          {
+            "file": "characters/huangyueying-0-0-de2ad917c0",
+            "text": "妙思忽来，正好一用！",
+            "sha256": "aa765fa53068bad8296731bf4d4a1a7d1ff394d1fb0f08e2031fba4fd9eb4d86"
+          },
+          {
+            "file": "characters/huangyueying-0-1-5d5509dd7d",
+            "text": "再想一步，便有新解。",
+            "sha256": "e43926c63ba8e83e5ecf9f9575656d96d52b97e040f67e1d8a05a955ba40aecd"
+          }
+        ],
+        "奇才": [
+          {
+            "file": "characters/huangyueying-1-0-f44fd9994d",
+            "text": "机关巧成，远近无碍。",
+            "sha256": "825407dcbf299b60fd20be7b4fa45edda223c3013b75b4b399a74356af1889fb"
+          },
+          {
+            "file": "characters/huangyueying-1-1-f4aaa5556d",
+            "text": "小小机关，也有奇用。",
+            "sha256": "2810c977ce653ad7f8520e27dbef7cf5c0700a987ce571fbd9bf394a78a42b91"
+          }
+        ]
+      }
+    },
+    "caocao": {
+      "name": "曹操",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+1%",
+      "pitch": "-6Hz",
+      "direction": "低沉自信，枭雄气度",
+      "skills": {
+        "奸雄": [
+          {
+            "file": "characters/caocao-0-0-10934a0af0",
+            "text": "借你锋芒，为我所用。",
+            "sha256": "61f3c3bb06dd40a71bece0d3d4aed1934af4f28247f3b02fad5c73c955d74612"
+          },
+          {
+            "file": "characters/caocao-0-1-455f26092a",
+            "text": "这一手，倒成全了我。",
+            "sha256": "24789f594a488e480ea5b28160369edf79436c2221e80c16a0b864f74875aa27"
+          }
+        ]
+      }
+    },
+    "simayi": {
+      "name": "司马懿",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-6%",
+      "pitch": "-8Hz",
+      "direction": "冷静深沉，话中藏锋",
+      "skills": {
+        "反馈": [
+          {
+            "file": "characters/simayi-0-0-6cfbf8615a",
+            "text": "这一份，我记下了。",
+            "sha256": "c11989a10cef5ed0e39d997ee5cddf13fdd25bbb7ca4b125563e403dfe6a4c18"
+          },
+          {
+            "file": "characters/simayi-0-1-21bb67fdab",
+            "text": "既来相赠，岂能不收？",
+            "sha256": "ece4c809222cead081f59e3faa285069602af0c3fbcf9ab1a7c863c69a384f84"
+          }
+        ],
+        "鬼才": [
+          {
+            "file": "characters/simayi-1-0-bc20267d37",
+            "text": "天数未定，且看此牌。",
+            "sha256": "a6e45b6abefe7f3ee8e095e4f8254365ba51a7bc70cbd5080e015f33d75901ca"
+          },
+          {
+            "file": "characters/simayi-1-1-f9693a2f98",
+            "text": "落子之前，再想一想。",
+            "sha256": "d0dfbdf4cb6960bf57df540c81cf53403e07f6b2052c97542266b2b974459222"
+          }
+        ]
+      }
+    },
+    "xiahoudun": {
+      "name": "夏侯惇",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "+5%",
+      "pitch": "-3Hz",
+      "direction": "刚烈决绝，忍痛反击",
+      "skills": {
+        "刚烈": [
+          {
+            "file": "characters/xiahoudun-0-0-1a81d5a76c",
+            "text": "痛又何妨，接我还击！",
+            "sha256": "376f1d001941eec81139716bf12c2187cc7833c928dd4480450045eea64e3b2a"
+          },
+          {
+            "file": "characters/xiahoudun-0-1-418475faa2",
+            "text": "这笔血债，当场奉还！",
+            "sha256": "a130984ffb5a018a19996a2ca42984aecc56ebaeeb05831f480c8bb00b099b3b"
+          }
+        ]
+      }
+    },
+    "zhangliao": {
+      "name": "张辽",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+7%",
+      "pitch": "-2Hz",
+      "direction": "干练沉着，突袭号令",
+      "skills": {
+        "突袭": [
+          {
+            "file": "characters/zhangliao-0-0-6b0fa505e3",
+            "text": "趁其不备，随我突进！",
+            "sha256": "811debca5873300cf33f71da99cf234c6f8e6bf876d4b6faa0b6bc7b9e65fa03"
+          },
+          {
+            "file": "characters/zhangliao-0-1-68aaa0edf0",
+            "text": "敌阵已乱，此刻出击！",
+            "sha256": "1057ff5ab9d30bfd7b18f8eedb5503d6b5db8da3376848b6972657a2c785315f"
+          }
+        ]
+      }
+    },
+    "xuchu": {
+      "name": "许褚",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "+8%",
+      "pitch": "-7Hz",
+      "direction": "粗犷爽直，勇猛热烈",
+      "skills": {
+        "裸衣": [
+          {
+            "file": "characters/xuchu-0-0-832235edff",
+            "text": "卸甲轻身，放手一战！",
+            "sha256": "05ff6d0e1110ac97f9a81bf8b9655c50586346242e764c2433ff96def3574275"
+          },
+          {
+            "file": "characters/xuchu-0-1-183065525b",
+            "text": "不凭铁甲，只凭胆气！",
+            "sha256": "7d138f2ab524f04ab0c61b5f08e3bdcc2936e534778be06f05fb9ebb352eb69b"
+          }
+        ]
+      }
+    },
+    "guojia": {
+      "name": "郭嘉",
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": "-3%",
+      "pitch": "-4Hz",
+      "direction": "洒脱机敏，轻笑料敌",
+      "skills": {
+        "天妒": [
+          {
+            "file": "characters/guojia-0-0-6b0785ea23",
+            "text": "天意如此，笑纳便是。",
+            "sha256": "f7a88d6289171922e6c2a9ff08140de6656910eef693874ce38df5aa145a0e62"
+          },
+          {
+            "file": "characters/guojia-0-1-e4b83c2ffc",
+            "text": "此番际遇，恰合我意。",
+            "sha256": "bda74ed985a978e477cc9abb2265dbcc9245f8d983775a2053e965c1273d0c6c"
+          }
+        ],
+        "遗计": [
+          {
+            "file": "characters/guojia-1-0-64443f52d4",
+            "text": "计留此处，诸君善用。",
+            "sha256": "b565f856732434ad7058c9216a6666dcc2d062861875b04a5800f50d2ba999df"
+          },
+          {
+            "file": "characters/guojia-1-1-0e81532f3e",
+            "text": "再留一策，助你破局。",
+            "sha256": "65756389bf25448403168313fc72371e5a811061996fcd46cfe6eea31e4cf4c8"
+          }
+        ]
+      }
+    },
+    "zhenji": {
+      "name": "甄姬",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-5%",
+      "pitch": "-4Hz",
+      "direction": "清冷婉转，自持优雅",
+      "skills": {
+        "倾国": [
+          {
+            "file": "characters/zhenji-0-0-c103183fed",
+            "text": "轻移莲步，避此锋芒。",
+            "sha256": "09d9f3a54d1ee46b0ac99f33714284f4306c4a2222d9ae3697f78a6d901c7e94"
+          },
+          {
+            "file": "characters/zhenji-0-1-2678b0f15e",
+            "text": "风过无痕，何处寻我？",
+            "sha256": "a003bfb784f3b01cdeb2404c502eeab6cdc2c6c7b56ee0b236e18d75f4c44655"
+          }
+        ],
+        "洛神": [
+          {
+            "file": "characters/zhenji-1-0-9485088adc",
+            "text": "清波照影，再问天心。",
+            "sha256": "8c597beeb97c80af7450ab2d84fee38fdf7cc04fd556e25a6160f683e8c6f24c"
+          },
+          {
+            "file": "characters/zhenji-1-1-0feef5fae0",
+            "text": "月临洛水，静候佳音。",
+            "sha256": "c9bb1b48d669b132646e0133b436dad2aba28c355effae590a3313948377155c"
+          }
+        ]
+      }
+    },
+    "sunquan": {
+      "name": "孙权",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+3%",
+      "pitch": "+2Hz",
+      "direction": "年轻沉稳，审时度势",
+      "skills": {
+        "制衡": [
+          {
+            "file": "characters/sunquan-0-0-d7f0f2164e",
+            "text": "舍此一着，再谋全局。",
+            "sha256": "e3ef64ba028d09e57bb91c04f906962130c35cfef4dc602e1909797eee51ae06"
+          },
+          {
+            "file": "characters/sunquan-0-1-08a9807241",
+            "text": "进退之间，自有权衡。",
+            "sha256": "48acd6b49f6cb6b1d3c56e7ee7f28971f905530f5c5880d692dad9752ea2bc6d"
+          }
+        ]
+      }
+    },
+    "ganning": {
+      "name": "甘宁",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "+11%",
+      "pitch": "+7Hz",
+      "direction": "爽朗不羁，痛快出击",
+      "skills": {
+        "奇袭": [
+          {
+            "file": "characters/ganning-0-0-28a8ee8b59",
+            "text": "趁夜破阵，拿来便是！",
+            "sha256": "3e433dd090215f3ec5e63a6fb6c4260475eba4067b3217bd62647a0a7c63cbaa"
+          },
+          {
+            "file": "characters/ganning-0-1-5dec09f502",
+            "text": "嘿，这回可逮住你了！",
+            "sha256": "f4c1c70285464a4ee7934fa0cde3bb064464bce3dc1a86cb4afd1521acea943d"
+          }
+        ]
+      }
+    },
+    "lvmeng": {
+      "name": "吕蒙",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-2%",
+      "pitch": "-5Hz",
+      "direction": "克制坚毅，蓄势待发",
+      "skills": {
+        "克己": [
+          {
+            "file": "characters/lvmeng-0-0-8fca08ab87",
+            "text": "且收锋芒，静待其时。",
+            "sha256": "a4ee1e7adeb3da24b0fd569057c231ddcd8789ce6da3bd438b8f7eec645366fd"
+          },
+          {
+            "file": "characters/lvmeng-0-1-c3c5156401",
+            "text": "忍住此刻，方见远谋。",
+            "sha256": "1647cc438f7c32a9e2a1f99e537e48b4e9dde47c32d97041498391a6631c6411"
+          }
+        ]
+      }
+    },
+    "huanggai": {
+      "name": "黄盖",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "-4%",
+      "pitch": "-9Hz",
+      "direction": "苍劲忠勇，忍痛而不退",
+      "skills": {
+        "苦肉": [
+          {
+            "file": "characters/huanggai-0-0-2c253d1dd9",
+            "text": "这点伤痛，岂能误事！",
+            "sha256": "513b9525c1504b4b00e8f49a64e24bfcc9e400319b3ac699fa5dae21bea6b96a"
+          },
+          {
+            "file": "characters/huanggai-0-1-2943cf05ca",
+            "text": "老骨尚硬，再撑一程！",
+            "sha256": "da61a2499830afa5f309058d1447a5fba0f46dfebe7db5787077a25ae4e93202"
+          }
+        ]
+      }
+    },
+    "zhouyu": {
+      "name": "周瑜",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "+2%",
+      "pitch": "+1Hz",
+      "direction": "儒雅自信，意气风发",
+      "skills": {
+        "英姿": [
+          {
+            "file": "characters/zhouyu-0-0-acd5e4cb79",
+            "text": "江风正好，壮我军威。",
+            "sha256": "593b72a867ac5d8eaa2ab1effb07d267192b4f1be5ef33f70f891cb980d21626"
+          },
+          {
+            "file": "characters/zhouyu-0-1-e5d5d95db1",
+            "text": "意气正盛，何惧此局！",
+            "sha256": "c2c128842af8b0fad6a8c216876fe88278ef1b645c7ab1fa1b4c72b6f626ec52"
+          }
+        ],
+        "反间": [
+          {
+            "file": "characters/zhouyu-1-0-00b5024a44",
+            "text": "真假之间，君可看清？",
+            "sha256": "79de82972ff7f59a2fcb0c3e4116942c2c862a459553b9f6a5b28c84725dc367"
+          },
+          {
+            "file": "characters/zhouyu-1-1-c5a53e97b4",
+            "text": "此牌赠君，好生思量。",
+            "sha256": "80427763317da65d97bd09fa1378c08ae2dbff4ca70f81eb9beb133300baceea"
+          }
+        ]
+      }
+    },
+    "daqiao": {
+      "name": "大乔",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-2%",
+      "pitch": "+2Hz",
+      "direction": "柔和端庄，以柔化险",
+      "skills": {
+        "国色": [
+          {
+            "file": "characters/daqiao-0-0-a9c80d3441",
+            "text": "且歇片刻，莫急征战。",
+            "sha256": "52ed98d5fe5e801be3c3f41018a9a10c59782aca02884f3becbb85422e12e72a"
+          },
+          {
+            "file": "characters/daqiao-0-1-f7e4c1ea50",
+            "text": "良辰如画，何不暂留？",
+            "sha256": "e009adc3e0cb784c109cdfc455dc380e30e92383d348c6e85b3b859008f93fe3"
+          }
+        ],
+        "流离": [
+          {
+            "file": "characters/daqiao-1-0-4d99d0e337",
+            "text": "流水无定，锋芒自移。",
+            "sha256": "e27b3a68e198ef6acfd1429c7a0b7cf773edd46ccb0d6e3a891c9288e8c43170"
+          },
+          {
+            "file": "characters/daqiao-1-1-c9b341939b",
+            "text": "借一缕风，化此危局。",
+            "sha256": "769bc3eeb447e73bd26c458b0f95e80aa4ce35e0a5510d3434580fbc73edad13"
+          }
+        ]
+      }
+    },
+    "luxun": {
+      "name": "陆逊",
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": "+2%",
+      "pitch": "-2Hz",
+      "direction": "清润谦和，锋芒内敛",
+      "skills": {
+        "谦逊": [
+          {
+            "file": "characters/luxun-0-0-8ceb760c1f",
+            "text": "谦而不弱，慎而有谋。",
+            "sha256": "a8bc7ff9d26f8706bbf023ad9764c9b2fca2ff0f6cdb3ceda78a81a851cc142c"
+          },
+          {
+            "file": "characters/luxun-0-1-8f4be5d220",
+            "text": "锋芒且敛，自守方圆。",
+            "sha256": "c19daeabc5bf4a7521735cc389d7de8fd4b94aaa5380ef7a476b0756d3b630d5"
+          }
+        ],
+        "连营": [
+          {
+            "file": "characters/luxun-1-0-bbb3708704",
+            "text": "营火相续，后计又生。",
+            "sha256": "44d0999aa07b105b90662455960c1377e19330097b9a6ea3a12b8f2eacbae7aa"
+          },
+          {
+            "file": "characters/luxun-1-1-acf0893a80",
+            "text": "一策用尽，再生一策。",
+            "sha256": "99aac07fe2d60aa3bdbf81e28cfb1516132dcc7cd23b65c9bc81b7e77a59858b"
+          }
+        ]
+      }
+    },
+    "sunshangxiang": {
+      "name": "孙尚香",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "+8%",
+      "pitch": "+5Hz",
+      "direction": "明快英气，爽利果敢",
+      "skills": {
+        "结姻": [
+          {
+            "file": "characters/sunshangxiang-0-0-159ae77017",
+            "text": "与你携手，共过此关。",
+            "sha256": "9792c64bfe6a559e39288eaa2cb0fc9fae06d3f581f4bc411898473876e5240a"
+          },
+          {
+            "file": "characters/sunshangxiang-0-1-b5953e0c3a",
+            "text": "振作起来，并肩再战！",
+            "sha256": "4afd8d438deabc1fea1b55265f31c46cfe1957a6bd74dd3a8b359603048b60a2"
+          }
+        ],
+        "枭姬": [
+          {
+            "file": "characters/sunshangxiang-1-0-494206332c",
+            "text": "弓在我手，谁敢轻看！",
+            "sha256": "af917cdad1011513eb8f39e2e12bdc27d1fd83e1c0ab0a370b4a70e1f4d3f9da"
+          },
+          {
+            "file": "characters/sunshangxiang-1-1-94c2c692a7",
+            "text": "卸去旧甲，再展锋芒！",
+            "sha256": "86a863121e0ec2007cc545a7a4e489949c3470c00d7d9dc1d63c652cce2c2755"
+          }
+        ]
+      }
+    },
+    "huatuo": {
+      "name": "华佗",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "-7%",
+      "pitch": "-5Hz",
+      "direction": "慈和安定，医者仁心",
+      "skills": {
+        "急救": [
+          {
+            "file": "characters/huatuo-0-0-086a224224",
+            "text": "莫慌，尚有转机。",
+            "sha256": "d3f64c8b1c0f17045d84f3a88d7df75995dd48f00d36685a3b354b154ab45c8b"
+          },
+          {
+            "file": "characters/huatuo-0-1-b469a02304",
+            "text": "稳住气息，我来施救。",
+            "sha256": "d72abd7e1c1dad5d66235492119896cd0929a985eedb5a09ba676a6216544af0"
+          }
+        ],
+        "青囊": [
+          {
+            "file": "characters/huatuo-1-0-769970ab2c",
+            "text": "细调气血，自可回春。",
+            "sha256": "26e08b1bec0eeaabe8fe524e2adef47940cebe22043da81ff4d613fd9d52e8c3"
+          },
+          {
+            "file": "characters/huatuo-1-1-fbb0879412",
+            "text": "且放宽心，此伤可医。",
+            "sha256": "6f9135e51e3ea3bd01a9407cabb15f17f9ba8cac826c30e89100410f9ca56f56"
+          }
+        ]
+      }
+    },
+    "lvbu": {
+      "name": "吕布",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "+4%",
+      "pitch": "-10Hz",
+      "direction": "张扬凌厉，压迫感十足",
+      "skills": {
+        "无双": [
+          {
+            "file": "characters/lvbu-0-0-c686adba37",
+            "text": "纵有千军，也挡不住我！",
+            "sha256": "d7a685fa2c14d9abc3b311bec9f2fe4fe47de28634f036b3d023ea7e17bb95cb"
+          },
+          {
+            "file": "characters/lvbu-0-1-14452218d5",
+            "text": "挡我锋芒，拿出本事！",
+            "sha256": "3a67733b8c7c7059fefbd3dd471f36536cc74074f04dcdaa8c1282abf8fd839e"
+          }
+        ]
+      }
+    },
+    "diaochan": {
+      "name": "貂蝉",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-4%",
+      "pitch": "+3Hz",
+      "direction": "轻柔从容，字里含机锋",
+      "skills": {
+        "离间": [
+          {
+            "file": "characters/diaochan-0-0-fd08caedab",
+            "text": "一言相问，谁更可信？",
+            "sha256": "fce1b016498a15b3c55cbf53c68bc51fece0fed843795a5a3c46edee4b617b2d"
+          },
+          {
+            "file": "characters/diaochan-0-1-55529e4788",
+            "text": "两位英雄，何不一较？",
+            "sha256": "8f4fa350c216a30265ef26a6badbb58f90b6cecc84b34f5d5fd9204139005a5a"
+          }
+        ],
+        "闭月": [
+          {
+            "file": "characters/diaochan-1-0-ea59ecbfec",
+            "text": "月下暂歇，静待花开。",
+            "sha256": "05528bb1cabf8699afa276db51ff683eb6b82b99cf5fb76cc5157dd2aaacb23a"
+          },
+          {
+            "file": "characters/diaochan-1-1-4bc9cb61f8",
+            "text": "轻掩帘扉，再理心绪。",
+            "sha256": "fb8e37dc7229ea0d56d5ab64a008254fa02163adb5267234aa18f8c5e187e041"
+          }
+        ]
+      }
+    },
+    "xiahouyuan": {
+      "name": "夏侯渊",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+10%",
+      "pitch": "+4Hz",
+      "direction": "迅捷利落，语气干脆",
+      "skills": {
+        "神速": [
+          {
+            "file": "characters/xiahouyuan-0-0-6e2a549787",
+            "text": "兵贵神速，随我直进！",
+            "sha256": "17a07e27d6b9b56681b410c6b4521ba80d3ceb97bfe475e61ed3e2d1ea4263ef"
+          },
+          {
+            "file": "characters/xiahouyuan-0-1-8b25b23dd7",
+            "text": "疾行如电，片刻便至！",
+            "sha256": "5b83c869e01aff98e239e4320c2ca468aaef9c095310ac36f6684a987918b7d9"
+          }
+        ]
+      }
+    },
+    "caoren": {
+      "name": "曹仁",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "-2%",
+      "pitch": "-7Hz",
+      "direction": "厚重坚定，守土不退",
+      "skills": {
+        "据守": [
+          {
+            "file": "characters/caoren-0-0-9df1aeb98a",
+            "text": "守住此地，寸步不让！",
+            "sha256": "3cca61ee7ed9abe0281b13d94521ee6b2b86f535d78131d4459125e48ca87f26"
+          },
+          {
+            "file": "characters/caoren-0-1-712c3ebd03",
+            "text": "筑牢防线，静候战机。",
+            "sha256": "007335d5a99eebb9c676c89d21818823c259c4e6d8fb9ab91ee590e0f4802bd6"
+          }
+        ]
+      }
+    },
+    "huangzhong": {
+      "name": "黄忠",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "-6%",
+      "pitch": "-11Hz",
+      "direction": "老将苍劲，沉着自信",
+      "skills": {
+        "烈弓": [
+          {
+            "file": "characters/huangzhong-0-0-854e48c15c",
+            "text": "看准了！此箭必中！",
+            "sha256": "1de10521b3f6acf8303c0a2b5c61506c46818d331fba17ea4ba23a9d9688ecc8"
+          },
+          {
+            "file": "characters/huangzhong-0-1-c9d39f6424",
+            "text": "弓弦犹劲，老将未老！",
+            "sha256": "cfe3675d98934f0b4ca31264c173e60b2063e0ee21b9a592ad695af77de819e9"
+          }
+        ]
+      }
+    },
+    "weiyan": {
+      "name": "魏延",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "+6%",
+      "pitch": "-4Hz",
+      "direction": "桀骜勇猛，愈战愈烈",
+      "skills": {
+        "狂骨": [
+          {
+            "file": "characters/weiyan-0-0-6b161dca32",
+            "text": "越是重围，越要向前！",
+            "sha256": "b40a99a36efb26be18fe52aecb62a100b43beb2f88f03c44b9d8adf7fee9ec5d"
+          },
+          {
+            "file": "characters/weiyan-0-1-59806f7400",
+            "text": "伤口未冷，再战一场！",
+            "sha256": "ab9485fb38bc6e4bf4fe20103b5810d0ba91b125ef128278ca3237a2c6d3e531"
+          }
+        ]
+      }
+    },
+    "xiaoqiao": {
+      "name": "小乔",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "+1%",
+      "pitch": "+6Hz",
+      "direction": "轻盈俏皮，温柔含笑",
+      "skills": {
+        "红颜": [
+          {
+            "file": "characters/xiaoqiao-0-0-039bc824d3",
+            "text": "红妆映水，风波自柔。",
+            "sha256": "78f0d41be56b93522e19eba227352ddb7d93253b592546b0e02b3c2b1a964fcf"
+          },
+          {
+            "file": "characters/xiaoqiao-0-1-e0e82d931f",
+            "text": "一抹春色，化去愁云。",
+            "sha256": "848bef1e317450a47d74681950538f87d71055a428a938ad0044c333c10f8c92"
+          }
+        ],
+        "天香": [
+          {
+            "file": "characters/xiaoqiao-1-0-ccf3569da1",
+            "text": "借花寄意，请君代劳。",
+            "sha256": "a351bad9133888714dcfafc3231949d2449552e0567603af8511f13870f9814a"
+          },
+          {
+            "file": "characters/xiaoqiao-1-1-008b4b95ea",
+            "text": "香随风转，险亦可移。",
+            "sha256": "51d5893b9b907893370c7e112dd19a85fc0f9b541392925830c7146b6031bc49"
+          }
+        ]
+      }
+    },
+    "zhoutai": {
+      "name": "周泰",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "-2%",
+      "pitch": "-9Hz",
+      "direction": "沙场坚忍，低沉顽强",
+      "skills": {
+        "不屈": [
+          {
+            "file": "characters/zhoutai-0-0-1e80c006f5",
+            "text": "还站得住，便不算输！",
+            "sha256": "ca8c7b36723c1d231235c06ce2017a35326c58bce0daa63d68ad888ec2bbdaa4"
+          },
+          {
+            "file": "characters/zhoutai-0-1-9a0fdc8007",
+            "text": "这条防线，有我在！",
+            "sha256": "b7c9f216be3520e03e2a006ee20165fe99fb8370fcc6fc6638d650099defc252"
+          }
+        ]
+      }
+    },
+    "zhangjiao": {
+      "name": "张角",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "-1%",
+      "pitch": "-8Hz",
+      "direction": "庄重肃穆，号令风雷",
+      "skills": {
+        "雷击": [
+          {
+            "file": "characters/zhangjiao-0-0-dc4c518fb6",
+            "text": "风雷听令，破此顽敌！",
+            "sha256": "4a0d6b7e030eb4e42a061847c84fbc4731d88248a0869970e0bf101e2a4b6d78"
+          },
+          {
+            "file": "characters/zhangjiao-0-1-cb1b8ebab3",
+            "text": "雷光落处，邪障尽散！",
+            "sha256": "8079a97575d1323d905db8fd586f2ee0a75ed78a1990c8c30d2c507ce92bf250"
+          }
+        ],
+        "鬼道": [
+          {
+            "file": "characters/zhangjiao-1-0-d89088bcd6",
+            "text": "阴阳流转，改此一局。",
+            "sha256": "7fec0d451367ee1acffc64ded3bba5d29f6966e3b09b25fb11ab0be74db9d729"
+          },
+          {
+            "file": "characters/zhangjiao-1-1-e16fb61180",
+            "text": "此道未穷，天机再变。",
+            "sha256": "65dbab03d51d72c6fd16d913f4c2a298571560d0271e4b23df6eb19b724a41a9"
+          }
+        ]
+      }
+    },
+    "yuji": {
+      "name": "于吉",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-7%",
+      "pitch": "-7Hz",
+      "direction": "飘忽从容，似真似幻",
+      "skills": {
+        "蛊惑": [
+          {
+            "file": "characters/yuji-0-0-f5ef9711bf",
+            "text": "眼见之物，未必是真。",
+            "sha256": "d9b3cb18a80d6ebc61f083acce068aa2cd48f30dbaa6ef85bba6adc86f59fdfe"
+          },
+          {
+            "file": "characters/yuji-0-1-685077f2f8",
+            "text": "信也由你，疑也由你。",
+            "sha256": "360671030959f8c79624cbdb5a52f2f8f08329023e1bc44fdab9681c139065cf"
+          }
+        ]
+      }
+    },
+    "dianwei": {
+      "name": "典韦",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "+10%",
+      "pitch": "-5Hz",
+      "direction": "雄浑忠勇，护主奋战",
+      "skills": {
+        "强袭": [
+          {
+            "file": "characters/dianwei-0-0-4fff5b9020",
+            "text": "有我在此，休得近前！",
+            "sha256": "4e022f38a4dda92e19bc98e6ea744cd7baab36201e9f625a18a1b9851e744b84"
+          },
+          {
+            "file": "characters/dianwei-0-1-995008473a",
+            "text": "拼此一击，也要破阵！",
+            "sha256": "327850468f22626ef30c51a271346d381f1ef4eb1ae101e456c19cd08618b83d"
+          }
+        ]
+      }
+    },
+    "pangde": {
+      "name": "庞德",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+6%",
+      "pitch": "-6Hz",
+      "direction": "决绝坚毅，进击不退",
+      "skills": {
+        "马术": [
+          {
+            "file": "characters/pangde-0-0-b130b6c916",
+            "text": "纵马驰阵，不避锋芒！",
+            "sha256": "95d72a5e9154f67e0cb4635dce3e69303cf5d07b32287c444a9d8100f57a2771"
+          },
+          {
+            "file": "characters/pangde-0-1-9634139a31",
+            "text": "提缰向前，寸步不退！",
+            "sha256": "f65f1d2e081fdcd33d95b6f92e606d3f043b43cc1a922b77083294dd802f05b9"
+          }
+        ],
+        "猛进": [
+          {
+            "file": "characters/pangde-1-0-f6a6c7553e",
+            "text": "躲得一击，躲不过追兵！",
+            "sha256": "2d95558a0d8528456bbbebf83ba70667eff5d54887cfc7173cfa637bd70fd812"
+          },
+          {
+            "file": "characters/pangde-1-1-ead3f6d3a8",
+            "text": "乘势再进，不留退路！",
+            "sha256": "2d28269c655f25ef6346a896a97229d72c7331f7edb7a29fe51a0021ebf308e8"
+          }
+        ]
+      }
+    },
+    "taishici": {
+      "name": "太史慈",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "+6%",
+      "pitch": "+4Hz",
+      "direction": "明朗磊落，一诺千金",
+      "skills": {
+        "天义": [
+          {
+            "file": "characters/taishici-0-0-80b7fc52c3",
+            "text": "既有一诺，必当赴战！",
+            "sha256": "db3083824cd84ff6177c56fe88f4444a18d2b36d2a22f554916225ba05e24680"
+          },
+          {
+            "file": "characters/taishici-0-1-bd06a61a6d",
+            "text": "以此为誓，堂堂一决！",
+            "sha256": "61c2b9fc3e48d21aa9440eeb72b06faab400f6591bd5d5409ae91bc20cff5bef"
+          }
+        ]
+      }
+    },
+    "yuanshao": {
+      "name": "袁绍",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+4%",
+      "pitch": "-1Hz",
+      "direction": "威严高昂，统军号令",
+      "skills": {
+        "乱击": [
+          {
+            "file": "characters/yuanshao-0-0-2fa465e387",
+            "text": "列阵齐射，压住敌军！",
+            "sha256": "a64018f3c2079dbffb34db0ff040c8a185a30e2adbde2d6e9a7e3a8a35aa0444"
+          },
+          {
+            "file": "characters/yuanshao-0-1-23ffb3764a",
+            "text": "万箭并发，莫失战机！",
+            "sha256": "2f2eb023041f1b35ea96842990381089ac33e86f75c08705f71a25acb86de3db"
+          }
+        ]
+      }
+    },
+    "menghuo": {
+      "name": "孟获",
+      "voice": "zh-CN-YunjianNeural",
+      "rate": "+3%",
+      "pitch": "-12Hz",
+      "direction": "豪放粗犷，野性不屈",
+      "skills": {
+        "祸首": [
+          {
+            "file": "characters/menghuo-0-0-0453000b8d",
+            "text": "这片山林，听我号令！",
+            "sha256": "35d1f70591a0e97957d033d1239649196dce3fd942c230035b15822d2aaef907"
+          },
+          {
+            "file": "characters/menghuo-0-1-9e49527824",
+            "text": "蛮军向前，谁敢阻拦！",
+            "sha256": "e3a128e941125568caf7988e038e1e6239854463db8267f07627efe73a98b28a"
+          }
+        ],
+        "再起": [
+          {
+            "file": "characters/menghuo-1-0-f1c82b392f",
+            "text": "还没结束！我又来了！",
+            "sha256": "4c26d70fdd29dc5a75fb63d0dd53c7b366fb832582eae5cb94596a40a8643047"
+          },
+          {
+            "file": "characters/menghuo-1-1-ccef23885b",
+            "text": "跌倒一回，再战一回！",
+            "sha256": "a588f66f4b02046515206bb5a867f19b976c90a533478c98e8491cda27912ef4"
+          }
+        ]
+      }
+    },
+    "zhurong": {
+      "name": "祝融",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "+9%",
+      "pitch": "-3Hz",
+      "direction": "热烈刚健，英姿凌厉",
+      "skills": {
+        "巨象": [
+          {
+            "file": "characters/zhurong-0-0-ae63222a9b",
+            "text": "巨象开道，踏平险阻！",
+            "sha256": "e795bdfaf041e17525bc65c53a040e98fb54b593f27a5f5d8cab5c6302ae0b03"
+          },
+          {
+            "file": "characters/zhurong-0-1-6f172864e2",
+            "text": "跟上象阵，一起冲！",
+            "sha256": "60340834d1523b5ca26f0fe3308ab61ed94f06461c0361b2f200296b36272fa8"
+          }
+        ],
+        "烈刃": [
+          {
+            "file": "characters/zhurong-1-0-84ae231660",
+            "text": "飞刃出手，看你往哪躲！",
+            "sha256": "3126056dba622d586e35c1130e054f918323e97032efbb09de931a2576443768"
+          },
+          {
+            "file": "characters/zhurong-1-1-c676384b18",
+            "text": "火势正盛，再追一击！",
+            "sha256": "a6b51b9aed6c5d7449e330dda9ce5a03ca099fc74e6c1d6683cdf81765e15a49"
+          }
+        ]
+      }
+    }
+  }
+}

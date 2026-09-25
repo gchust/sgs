@@ -101,3 +101,18 @@ test("national hidden portraits and equipment labels do not expose unrevealed na
   assert.match(render({}), /张飞/); assert.doesNotMatch(render({}), /关羽/);
   assert.match(render({ ended: true }), /关羽/);
 });
+
+test("recent play history retains eight individual cards in chronological order", async () => {
+  const { ActionStage } = await vite.ssrLoadModule("/app/battle-ui.jsx");
+  const cards = Array.from({ length: 12 }, (_, i) => ({
+    seq: i + 1, type: 'sha', suit: '♠', rank: '7', by: `出牌者${i + 1}`,
+    actor: 0, destination: '对手', kind: 'card',
+  }));
+  const Card = ({ card }) => React.createElement('button', { 'data-sequence': card.seq }, `卡牌${card.seq}`);
+  const html = renderToStaticMarkup(React.createElement(ActionStage, { cards, entries: [], Card, onInspect() {} }));
+  assert.deepEqual([...html.matchAll(/data-sequence="(\d+)"/g)].map(m => Number(m[1])), [5, 6, 7, 8, 9, 10, 11, 12]);
+  assert.match(html, /最近8张出牌，按时间顺序排列/);
+  assert.match(html, /出牌者12/);
+  const empty = renderToStaticMarkup(React.createElement(ActionStage, { cards: [], entries: [], Card }));
+  assert.match(empty, /等待第一张出牌/);
+});
