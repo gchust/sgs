@@ -95,7 +95,7 @@ export default function GameTable() {
     function changeConfig(patch) { setConfig(c => { const next = normalizeConfig({ ...c, ...patch }); configRef.current = next; try {
         localStorage.setItem('mengjiang-v2-config', JSON.stringify(next));
     }
-    catch { } return next; }); }
+    catch { /* Keep settings in memory when browser storage is unavailable. */ } return next; }); }
     useEffect(() => {
         const activeTimers = timers.current;
         const hydration = requestAnimationFrame(() => {
@@ -110,7 +110,7 @@ export default function GameTable() {
             if (validateSave(previous))
                 setSaved(previous);
         }
-        catch { }
+        catch { /* Ignore unavailable storage or malformed persisted data. */ }
         if (window.innerWidth <= 1150) setLogOpen(false);
         setReady(true);
         });
@@ -135,7 +135,7 @@ export default function GameTable() {
         localStorage.setItem('mengjiang-v2-save', json);
         setSaved(JSON.parse(json));
     }
-    catch { } }
+    catch { /* Continue the current game when saving is unavailable. */ } }
     function coordinates(pid) { const node = pid === 'deck' ? document.querySelector('[data-deck]') : pid === 'table' ? document.querySelector('[data-table]') : document.querySelector(`[data-player="${pid}"]`); const root = shellRef.current?.getBoundingClientRect(), rect = node?.getBoundingClientRect(); if (!root || !rect)
         return { x: 0, y: 0 }; return { x: rect.x + rect.width / 2 - root.x, y: rect.y + rect.height / 2 - root.y }; }
     async function animate(event) {

@@ -39,6 +39,7 @@ npm run dev
 ```
 
 ```sh
+npm run lint
 npm run build
 node --test tests/*.test.mjs tests/game/*.test.mjs
 ```
@@ -53,7 +54,7 @@ node --test tests/*.test.mjs tests/game/*.test.mjs
 
 ### GitHub Pages 自动部署
 
-仓库内已提供 [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml)：每次推送到 `develop` 时，安装依赖、构建、运行测试，再发布 `dist/`。也支持手动触发。使用 GitHub 自动提供的 `GITHUB_TOKEN`，无需添加个人 Token 或仓库 Secret。
+仓库内已提供 [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml)：每次推送到 `develop` 时，先检查 Pages 配置，再安装依赖、检查代码、构建、运行测试，最后发布 `dist/`。也支持手动触发。使用 GitHub 自动提供的 `GITHUB_TOKEN`，无需添加个人 Token 或仓库 Secret。
 
 首次启用：
 
@@ -62,6 +63,12 @@ node --test tests/*.test.mjs tests/game/*.test.mjs
 3. 等待部署成功，访问 **https://gchust.github.io/sgs/**。实际地址也会显示在工作流的 `github-pages` 环境中。
 
 Fork 后先在自己的仓库启用 Actions 和 Pages，再运行工作流；地址变为 `https://<用户名>.github.io/<仓库名>/`。请勿选择直接发布源码分支，浏览器需要构建后的文件。
+
+如果 CI 报 `Get Pages site failed` / `HttpError: Not Found`，请先检查 **Settings → Pages → Source** 是否已设为 **GitHub Actions**。2026-09-08 的首次推送曾因 Pages 尚未启用而在部署阶段返回 404，当时构建和测试均已通过；同一提交随后手动运行部署成功。工作流现已把 Pages 检查提前到安装依赖之前，配置缺失会直接在 `Check GitHub Pages configuration` 步骤报错。
+
+启用 Pages 后，在原失败运行中选择 **Re-run all jobs**，重新构建并部署。上传的 Pages 产物默认只保留 1 天，过期后仅选择 **Re-run failed jobs** 会因缺少产物再次失败。单独点击 **Run workflow** 会创建新的运行，不会更新旧运行的失败记录。
+
+`actions/configure-pages` 的 `enablement: true` 需要额外授权的 Token，默认 `GITHUB_TOKEN` 不能用来首次启用 Pages，因此仍需先完成上面的仓库设置。
 
 ### Vercel
 
